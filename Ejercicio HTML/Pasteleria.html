@@ -1,66 +1,109 @@
 <!DOCTYPE html>
-<html lang="ES-es">
+<!-- <html lang="ES-es"> así no se pone en html5-->
+<html lang="es">
+
 <head>
-<meta charset="UTF-8"/>
-<title>Página Inicio</title>    
+    <meta charset="UTF-8" />
+    <!-- estos metas debemos ponerlos-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pastelería</title>
 </head>
+
 <body>
-    <header>
-    
-                <p style="color:#C39B5F"><a href="Principal.html" target="_self"><img src="Logo_Migas_Amigas.png" width="100px" alt="logo_empresa"></a>El arte de ser artesanos</p>
-        <table>
-            <tr>
-                <td>
-                    <nav>
-                    <a href="Principal.html" title="Página inicio" target="_self">Inicio</a>
-                    <a href="Panaderia.html" title="Panaderia" target="_self">Panadería</a>
-                    <a href="Pasteleria.html" title="Pasteleria" target="_self">Pastelería</a>
-                    <a href="Cafeteria.html" title="Cafeteria" target="_self">Cafetería</a>
-                    <a href="Contacto.html" title="Privado" target="_self">Contacto</a><br />
-                    <img src="Desplegable.png" width="20px" alt="imagen_desplegable">
-                    <form>
-                        <select name="idioma" id="idioma">
-                            <option value="ES">ES</option>
-                            <option value="PT">PT</option>
-                        </select>
-                    </form>
-                    </nav>
-                </td>  
-            </tr>
-        </table>
+    <!-- para que lo metes en un p? NO QUIERO VER TABLAS PARA MAQUETAR
+            <p style="color:#C39B5F"><a href="Principal.html" target="_self"><img
+                        src="Logo_Migas_Amigas.png" width="100px"
+                        alt="logo_empresa"></a>El arte de ser artesanos</p>
+            <table>
+                <tr>
+                    <td>
+                        <nav>
+                            <a href="Principal.html" title="Página inicio"
+                                target="_self">Inicio</a>
+                            <a href="Panaderia.html" title="Panaderia"
+                                target="_self">Panadería</a>
+                            <a href="Pasteleria.html" title="Pasteleria"
+                                target="_self">Pastelería</a>
+                            <a href="Cafeteria.html" title="Cafeteria"
+                                target="_self">Cafetería</a>
+                            <a href="Contacto.html" title="Privado"
+                                target="_self">Contacto</a><br />
+                            <img src="Desplegable.png" width="20px"
+                                alt="imagen_desplegable">
+                            <form>
+                                <select name="idioma" id="idioma">
+                                    <option value="ES">ES</option>
+                                    <option value="PT">PT</option>
+                                </select>
+                            </form>
+                        </nav>
+                    </td>
+                </tr>
+            </table>-->
+    <a href="index.html"><img src="imagenes/Logo_Migas_Amigas.png" alt="Enlace a
+                la página principal" srcset=""></a>
+    <h1>Migas Amigas- El arte de ser artesanos</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Panaderia.html">Panadería</a></li>
+            <li><a href="#">Pasteleria</a></li>
+            <li><a href="Cafeteria.html">Cafetería</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <nav id="idioma">
+        <ul>
+            <li><a href="#"><img src="imagenes/espana.png" alt="Enlace a
+                            la página de inicio en español"></a></li>
+            <li><a href="portugues/index.html"><img src="imagenes/portugal.png" alt="Enlace a la
+                            página de inicio en portugues"></a></li>
+        </ul>
+    </nav>
     </header>
-    <div id="principal">
-    <section>
-       <h2>Tartas</h2> 
-        <article>
-            <p><img src="cake.jpg" alt="imagen_tarta" width="50px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ipsum placerat odio iaculis hendrerit a in lacus.</p>
+    <main>
+        <section>
+            <h2>Tartas</h2>
+            <!-- <article> -->
+            <p><img src="imagenes/cake.jpg" alt="" width="50px">Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                viverra ipsum placerat odio iaculis hendrerit a in
+                lacus.</p>
             <p>Ver más</p>
-        </article>
-        <h2>Bollería</h2> 
-        <article>
-            <p><img src="croissants.jpg" alt="imagen_croissants" width="50px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra ipsum placerat odio iaculis hendrerit a in lacus.</p>
+            <!-- </article> -->
+        </section>
+        <section>
+            <h2>Bollería</h2>
+            <!-- <article> -->
+            <p><img src="imagenes/croissants.jpg" alt="" width="50px">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed viverra ipsum placerat odio iaculis
+                hendrerit a in lacus.</p>
             <p>Ver más</p>
-        </article>
-    </section>
-    </div>
-    <aside>
-        <div id="Cesta">
-            <img src="basket.png" alt="imagen_cesta" width="30px">
-            
-        </div>
-    </aside>
+            <!-- </article> -->
+        </section>
+        <!-- </div> -->
+        <aside>
+            <!-- <div id="Cesta">
+                <img src="imagenes/basket.png" alt="" width="30px">
+
+            </div> -->
+        </aside>
+    </main>
     <footer>
-    <table>
-        <tr>
-            <td>Dónde estamos</td><td></td><td>Síguenos en:</td>
-        </tr>
-        <tr>
-           <td>Rúa Augusto González Besada, 10</td><td></td><td></td><td><td><img src="Facebook.png" alt="facebook" width="30px"></td><td><img src="Instagram.png" alt="logo_instagram" width="25px"></td><td><img src="Pinterest.png" alt="logo_pinterest" width="30px"></td>
-        </tr>
-        <tr>
-            <td>36700 Tui</td>
-        </tr>
-    </table>
+        <address>
+            <p>Rúa Augusto González Besada, 10</p>
+            <p>36700 Tui</p>
+        </address>
+        <ul>
+            <li><a href=""><img src="imagenes/Facebook.png" alt="Enlace a
+                            facebook"></a></li>
+            <li><a href=""><img src="imagenes/Instagram.png" alt="Enlace a
+                            Instagram"></a></li>
+            <li><a href=""><img src="imagenes/Pinterest.png" alt="Enlace a
+                            Pinterest"></a></li>
+        </ul>
     </footer>
 </body>
+
 </html>

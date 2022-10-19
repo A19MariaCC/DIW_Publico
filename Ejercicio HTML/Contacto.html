@@ -1,55 +1,111 @@
 <!DOCTYPE html>
-<html lang="ES-es">
-<head>
-<meta charset="UTF-8"/>
-<title>Página Inicio</title>    
-</head>
-<body>
-    <header>
-    
-                <p style="color:#C39B5F"><a href="Principal.html" target="_self"><img src="Logo_Migas_Amigas.png" width="100px" alt="logo_empresa"></a>El arte de ser artesanos</p>
-        <table>
-            <tr>
-                <td>
-                    <nav>
-                    <a href="Principal.html" title="Página inicio" target="_self">Inicio</a>
-                    <a href="Panaderia.html" title="Panaderia" target="_self">Panadería</a>
-                    <a href="Pasteleria.html" title="Pasteleria" target="_self">Pastelería</a>
-                    <a href="Cafeteria.html" title="Cafeteria" target="_self">Cafetería</a>
-                    <a href="Contacto.html" title="Privado" target="_self">Contacto</a><br />
-                    <img src="Desplegable.png" width="20px" alt="imagen_desplegable">
-                    <form>
-                        <select name="idioma" id="idioma">
-                            <option value="ES">ES</option>
-                            <option value="PT">PT</option>
-                        </select>
-                    </form>
-                    </nav>
-                </td>  
-            </tr>
-        </table>
+<!-- <html lang="ES-es"> así no se pone en html5-->
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8" />
+        <!-- estos metas debemos ponerlos-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página Pastelería</title>
+    </head>
+
+    <body>
+        <!-- para que lo metes en un p? NO QUIERO VER TABLAS PARA MAQUETAR
+            <p style="color:#C39B5F"><a href="Principal.html" target="_self"><img
+                        src="Logo_Migas_Amigas.png" width="100px"
+                        alt="logo_empresa"></a>El arte de ser artesanos</p>
+            <table>
+                <tr>
+                    <td>
+                        <nav>
+                            <a href="Principal.html" title="Página inicio"
+                                target="_self">Inicio</a>
+                            <a href="Panaderia.html" title="Panaderia"
+                                target="_self">Panadería</a>
+                            <a href="Pasteleria.html" title="Pasteleria"
+                                target="_self">Pastelería</a>
+                            <a href="Cafeteria.html" title="Cafeteria"
+                                target="_self">Cafetería</a>
+                            <a href="Contacto.html" title="Privado"
+                                target="_self">Contacto</a><br />
+                            <img src="Desplegable.png" width="20px"
+                                alt="imagen_desplegable">
+                            <form>
+                                <select name="idioma" id="idioma">
+                                    <option value="ES">ES</option>
+                                    <option value="PT">PT</option>
+                                </select>
+                            </form>
+                        </nav>
+                    </td>
+                </tr>
+            </table>-->
+        <a href="index.html"><img src="imagenes/Logo_Migas_Amigas.png" alt="Enlace a
+                la página principal" srcset=""></a>
+        <h1>Migas Amigas- El arte de ser artesanos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Panaderia.html">Panadería</a></li>
+                <li><a href="#">Pasteleria</a></li>
+                <li><a href="Cafeteria.html">Cafetería</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav id="idioma">
+            <ul>
+                <li><a href="#"><img src="imagenes/espana.png" alt="Enlace a
+                            la página de contacto en español"></a></li>
+                <li><a href="portugues/contacto.html"><img
+                            src="imagenes/portugal.png" alt="Enlace a la
+                            página de contacto en portugues"></a></li>
+            </ul>
+        </nav>
     </header>
-    <div id="principal">
-    <section>
-        <article class="formulario">
-            <h2>Contacta con nosotros</h2> 
-            <form action="." method="get">
-            <input type="text" id="name" name="name" placeholder="Nombre y apellidos" size="30"><br /><br />
+    <main>
+        <!-- <section> -->
+        <section class="formulario">
+            <h2>Contacta con nosotros</h2>
+            <form action="#" method="get">
+                <!--LOS LABEL! todo input (salvo submit) tiene que tener su label-->
+                <!-- <input type="text" id="name" name="name" placeholder="Nombre y apellidos" size="30"><br /><br />
             <input type="text" id="asunto" name="asunto" placeholder="Asunto" size="30"><br /><br />
-            <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Mensaje"></textarea><br />
-            <input type="submit" id="submit" name="submit" value="Enviar">     
-            </form> 
-         </article> 
-         <article class="localizacion">
-            <h2>Localización</h2>
-            <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46778.42378222797!2d-8.579703148204532!3d42.88019963979193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe44e2dd71a7%3A0xe0146888c087e311!2sSantiago%20de%20Compostela%2C%20La%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1571854862675!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-         </article>
-    </section>
-    </div>
-    <footer>
-    <table>
+            <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Mensaje"></textarea><br /> -->
+                <p><label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre"
+                        placeholder="Pedro Pérez Pérez" size="30"
+                        title="Nombre y apellidos">
+                </p>
+                <p><label for="mail">Correo electrónico:</label>
+                    <input type="email" name="mail" id="mail"
+                        placeholder="pedro@gmail.com" size="30"
+                        title="Correo electrónico">
+                </p>
+                <p><label for="asunto">Asunto:</label>
+                    <input type="text" name="asunto" id="asunto"
+                        placeholder="Encargos" size="30"
+                        title="Asunto del contacto">
+                </p>
+                <p><label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" cols="50" placeholder="Mensaje"></textarea></p>
+                    <input type="submit" id="submit" name="submit"
+                        value="Enviar">
+                </form>
+            </section>
+            <section class="localizacion">
+                <h2>Localización</h2>
+                <figure id="mapa">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46778.42378222797!2d-8.579703148204532!3d42.88019963979193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe44e2dd71a7%3A0xe0146888c087e311!2sSantiago%20de%20Compostela%2C%20La%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1571854862675!5m2!1ses!2ses"
+                        width="600" height="450" style="border:0;"
+                        allowfullscreen=""></iframe>
+                </figure>
+            </section>
+            <!-- </section> -->
+        </div>
+        <footer>
+            <!-- <table>
         <tr>
             <td>Dónde estamos</td><td></td><td>Síguenos en:</td>
         </tr>
@@ -59,7 +115,20 @@
         <tr>
             <td>36700 Tui</td>
         </tr>
-    </table>
-    </footer>
-</body>
+    </table> -->
+            <address>
+                <p>Rúa Augusto González Besada, 10</p>
+                <p>36700 Tui</p>
+            </address>
+            <ul>
+                <li><a href=""><img src="imagenes/Facebook.png" alt="Enlace a
+                            facebook"></a></li>
+                <li><a href=""><img src="imagenes/Instagram.png" alt="Enlace a
+                            Instagram"></a></li>
+                <li><a href=""><img src="imagenes/Pinterest.png" alt="Enlace a
+                            Pinterest"></a></li>
+            </ul>
+        </footer>
+    </body>
+
 </html>
